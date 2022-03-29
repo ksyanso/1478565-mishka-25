@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Ксения Сорокина](https://up.htmlacademy.ru/adaptive/25/user/1478565).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
