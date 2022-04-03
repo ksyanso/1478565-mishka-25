@@ -7,11 +7,11 @@
   <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html" aria-current="page">
-      <img class="logo__image" src="images/svg/mishka_logo_mobile.svg" width="86" height="35" alt="Логотип Мишка.">
+      <img class="logo__image" src="images/mishka_logo_mobile.svg" width="86" height="35" alt="Логотип Мишка.">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toogle burger-menu">
-        <span class="visually-hidden">Открыть меню.</span>
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-navigation__list site-list">
         <li class="site-list__item">
@@ -31,7 +31,9 @@
       </ul>
       <ul class="main-navigation__list user-list">
         <li class="user-list__item">
-          <a class="user-list__link link-icon link-icon--icon_search" href="#">Поиск по сайту</a>
+          <a class="user-list__link link-icon link-icon--icon_search" href="#">
+            <span class="link-icon__description">Поиск по сайту</span>
+          </a>
         </li>
         <li class="user-list__item">
           <a class="user-list__link link-icon link-icon--icon_cart" href="#">Корзина: пока пуста</a>
@@ -58,19 +60,23 @@
 <!--Карточка товара недели-->
     <section class="main-container__popular-product popular-product">
       <h2 class="popular-product__title title">Вязаные корзинки</h2>
-      <b class="popular-product__hit">ТОВАР НЕДЕЛИ</b>
-      <p class="popular-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и
-        трёх размерах.</p>
+      <b class="popular-product__hit">Товар недели</b>
+      <p class="popular-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
       <dl class="popular-product__characteristic product-details">
-        <dt class="product-details__property">Цвет:</dt>
-        <dd class="product-details__value">тиффани/серый</dd>
-        <dt class="product-details__property">Диаметр:</dt>
-        <dd class="product-details__value">25 см</dd>
-        <dt class="product-details__property">Высота:</dt>
-        <dd class="product-details__value">15 см</dd>
+        <div class="product-details__item">
+          <dt class="product-details__property">Цвет:</dt>
+          <dd class="product-details__value">тиффани/серый</dd>
+        </div>
+        <div class="product-details__item">
+          <dt class="product-details__property">Диаметр:</dt>
+          <dd class="product-details__value">25 см</dd>
+        </div>
+        <div class="product-details__item">
+          <dt class="product-details__property">Высота:</dt>
+          <dd class="product-details__value">15 см</dd>
+        </div>
       </dl>
-      <img class="popular-product__image" src="images/product_hit_mobile.png" width="260" height="315"
-           alt="Три вязаные корзинки.">
+      <img class="popular-product__image" src="images/product_hit_mobile.png" width="260" height="315" alt="Три вязаные корзинки.">
       <p class="popular-product__price">Цена: 990 руб.</p>
       <button class="popular-product__button button" type="button">Заказать</button>
     </section>
@@ -91,19 +97,21 @@
 <!--Раздел с отзывами-->
     <section class="main-container__feedback feedback">
       <h2 class="feedback__title title">Отзывы</h2>
-      <blockquote class="feedback__item">
-        <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-          лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <cite class="feedback__author-name">Анастасия Красильникова
+      <figure class="feedback__item">
+        <blockquote class="feedback__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+        </blockquote>
+        <figcaption class="feedback__author-name">
+          Анастасия Красильникова
           <a class="feedback__author-link" href="#">@misssssiskras</a>
-        </cite>
-      </blockquote>
+        </figcaption>
+      </figure>
       <p class="feedback__toogles slider-toogles">
         <button class="slider-toogles__prev slider-toogles__prev--icon_prev" type="button">
-          <span class="visually-hidden">Предыдущий отзыв.</span>
+          <span class="visually-hidden">Предыдущий отзыв</span>
         </button>
         <button class="slider-toogles__next slider-toogles__next--icon_next" type="button">
-          <span class="visually-hidden">Следующий отзыв.</span>
+          <span class="visually-hidden">Следующий отзыв</span>
         </button>
       </p>
       <a class="feedback__button button" href="#">Написать</a>
@@ -131,17 +139,17 @@
       <ul class=" main-footer__social social-list">
         <li class="social-list__item">
           <a class="social-list__icon social-list__icon_vk" href="">
-            <span class="visually-hidden">Перейти в ВКонтакте.</span>
+            <span class="visually-hidden">Перейти в ВКонтакте</span>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__icon social-list__icon_youtube" href="">
-            <span class="visually-hidden">Перейти на ютуб.</span>
+            <span class="visually-hidden">Перейти на ютуб</span>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__icon social-list__icon_telegram" href="">
-            <span class="visually-hidden">Перейти в телеграм.</span>
+            <span class="visually-hidden">Перейти в телеграм</span>
           </a>
         </li>
       </ul>
@@ -149,8 +157,7 @@
       <div class="main-footer__copyright copyright">
         <span class="copyright__description">Разработано</span>
         <a class="copyright__link logo-html-academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="logo-html-academy__img" src="images/htmlacademy.svg" width="27" height="34"
-               alt="Логотип сайта HTML Academy.">
+          <span class="visually-hidden">Логотип сайта HTML Academy</span>
         </a>
       </div>
     </div>
@@ -165,18 +172,15 @@
           <legend class="content-form__title">Выберите размер:</legend>
           <ul class="content-form__list">
             <li class="content-form__item">
-              <input class="content-form__input content-form__input--current" type="radio" name="size" value="s"
-                     id="size-s" checked>
+              <input class="content-form__input" type="radio" name="size" value="s" id="size-s" checked>
               <label class="visually-hidden" for="size-s">Размер s</label>
             </li>
             <li class="content-form__item">
-              <input class="content-form__input" type="radio" name="size" value="m"
-                     id="size-m">
+              <input class="content-form__input" type="radio" name="size" value="m" id="size-m">
               <label class="visually-hidden" for="size-m">Размер m</label>
             </li>
             <li class="content-form__item">
-              <input class="content-form__input" type="radio" name="size" value="l"
-                     id="size-l">
+              <input class="content-form__input" type="radio" name="size" value="l" id="size-l">
               <label class="visually-hidden" for="size-l">Размер l</label>
             </li>
           </ul>
