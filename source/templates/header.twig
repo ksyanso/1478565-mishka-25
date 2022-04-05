@@ -1,0 +1,37 @@
+<header class="main-header">
+  <a class="main-header__logo logo" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+    <img class="logo__image" src="images/mishka_logo_mobile.svg" width="86" height="35" alt="Логотип Мишка.">
+  </a>
+  <nav class="main-navigation">
+    <button class="main-navigation__toogle burger-menu">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <ul class="main-navigation__list site-list">
+      <li class="site-list__item">
+        <a href="catalog.html" {% if permalink == "catalog.html" %}aria-current="page"{% endif %}>Каталог товаров</a>
+        <ul class="site-list__sublist">
+          <li class="site-list__subitem">
+            <a href="">Новые поступления</a>
+          </li>
+          <li class="site-list__subitem">
+            <a href="">Распродажа</a>
+          </li>
+        </ul>
+      </li>
+      <li class="site-list__item">
+        <a href="form.html" {% if permalink == "form.html" %}aria-current="page"{% endif %}>Вязание на заказ</a>
+      </li>
+    </ul>
+    <ul class="main-navigation__list user-list">
+      <li class="user-list__item">
+        <a class="user-list__link link-icon link-icon--icon_search" href="#">
+          <span class="link-icon__description">Поиск по сайту</span>
+        </a>
+      </li>
+      <li class="user-list__item">
+        <a class="user-list__link link-icon link-icon--icon_cart" href="#">Корзина: пока пуста</a>
+      </li>
+    </ul>
+  </nav>
+  <p class="main-header__delivery">Бесплатная доставка по России</p>
+</header>
