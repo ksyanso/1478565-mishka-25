@@ -1,0 +1,21 @@
+.main-screen {
+  background-image: url("../../img/main-screen-mobile@1x.jpg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 70px;
+  color: var(--main-color);
+}
+
+.main-content__main-screen {
+  margin-bottom: 30px;
+}
+
+.main-screen__main-title {
+  margin: 0;
+  margin-bottom: 120px;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}

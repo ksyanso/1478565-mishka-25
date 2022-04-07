@@ -1,0 +1,38 @@
+.popular-product__title {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.popular-product__hit {
+  display: block;
+  color: var(--accent-color);
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.popular-product__description {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.popular-product__characteristic {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.popular-product__image {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.popular-product__price {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 24px;
+  font-weight: 700;
+}

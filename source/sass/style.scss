@@ -1,2 +1,28 @@
-@use "./global/global.scss";
-@use "./blocks/button.scss";
+@import "./global/fonts.scss";
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./blocks/button.scss";
+@import "./blocks/container-content.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/burger-menu.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/user-list.scss";
+@import "./blocks/main-content.scss";
+@import "./blocks/main-screen.scss";
+@import "./blocks/product-list.scss";
+@import "./blocks/popular-product.scss";
+@import "./blocks/title.scss";
+@import "./blocks/product-details.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/slider-toogles.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/copyright.scss";
+
+
+
+
