@@ -1,0 +1,29 @@
+.contacts {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contacts-title {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.contacts__list {
+  margin: 0;
+  margin-bottom: 62px;
+}
+
+.contacts__value {
+  margin: 0;
+}
+
+.contacts__email {
+  text-decoration: none;
+  color: var(--base-color);
+}
+
+.contacts__image {
+  display: block;
+  object-fit: cover;
+  margin-bottom: 42px;
+}

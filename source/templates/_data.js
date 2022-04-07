@@ -6,11 +6,11 @@ export default {
     },
     {
       "path": "catalog.html",
-      "name": "Каталог продукции"
+      "name": "Каталог товаров"
     },
     {
       "path": "form.html",
-      "name": "Подбор программы"
+      "name": "Вязание на заказ"
     }
   ]
 }

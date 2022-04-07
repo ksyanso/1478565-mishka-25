@@ -1,0 +1,21 @@
+.main-footer {
+  background-color: #f1f1f1;
+  padding-top: 25px;
+  padding-bottom: 23px;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-flow: column;
+}
+
+.main-footer__social {
+  margin: 0;
+  margin-bottom: 51px;
+  padding: 0;
+}
+
+.main-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+}

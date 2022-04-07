@@ -1,0 +1,29 @@
+.product-list {
+  margin: 0;
+  padding: 0;
+}
+
+.product-list__item {
+  list-style-type: none;
+}
+
+.product-list__link {
+  display: block;
+  width: 100%;
+  min-height: 103px;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-top: 24px;
+  padding-bottom: 31px;
+
+  &--color_darken {
+    background-color: #56c3b2;
+  }
+
+}
+
+
