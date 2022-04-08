@@ -5,9 +5,10 @@
 {% block main %}
 <!--Форма для заказа-->
   <main class="order-page">
-    <h1 class="order-page__title">Вязание на заказ</h1>
-    <p class="order-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form class="order-page__form form" action="https://echo.htmlacademy.ru" method="get">
+    <h1 class="order-page__title inner-title">Вязание на заказ</h1>
+    <p class="order-page__description container-content">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+      заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <form class="order-page__form form container-content" action="https://echo.htmlacademy.ru" method="get">
 <!--Тип-радиокнопки-->
       <fieldset class="form__type product-type">
         <legend class="product-type__title form-title">Тип</legend>
@@ -74,13 +75,13 @@
 <!--Номер телефона-->
       <div class="form__phone phone-form">
         <label class="phone-form__label form-title" for="tel">Тел</label>
-        <input class="phone-form__input" type="tel" name="phone" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        <input class="phone-form__input form-input" type="tel" name="phone" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
       </div>
 
 <!--E-mail-->
       <div class="form__email form-email">
         <label class="form-email__label form-title" for="email">E-mail</label>
-        <input class="form-email__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+        <input class="form-email__input form-input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
       </div>
 
 <!--Дополнительное поле-->
