@@ -7,15 +7,15 @@
   color: var(--main-color);
 }
 
-.main-content__main-screen {
-  margin-bottom: 30px;
-}
-
 .main-screen__main-title {
-  margin: 0;
   margin-bottom: 120px;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
+}
+
+.main-screen__product {
+  margin: 0;
+  padding: 0;
 }

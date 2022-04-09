@@ -1,4 +1,4 @@
-<header class="main-header container-content">
+<header class="page__centerer main-header">
   <a class="main-header__logo logo" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
     <img class="logo__image" src="./img/mishka_logo_mobile.svg" width="86" height="35" alt="Логотип Мишка.">
   </a>
@@ -8,18 +8,18 @@
     </button>
     <ul class="main-navigation__list site-list">
       <li class="site-list__item">
-        <a href="catalog.html" {% if permalink == "catalog.html" %}aria-current="page"{% endif %}>Каталог товаров</a>
+        <a class="site-list__link" href="catalog.html" {% if permalink == "catalog.html" %}aria-current="page"{% endif %}>Каталог товаров</a>
         <ul class="site-list__sublist">
           <li class="site-list__subitem">
-            <a href="">Новые поступления</a>
+            <a class="site-list__link" href="">Новые поступления</a>
           </li>
           <li class="site-list__subitem">
-            <a href="">Распродажа</a>
+            <a class="site-list__link" href="">Распродажа</a>
           </li>
         </ul>
       </li>
       <li class="site-list__item">
-        <a href="form.html" {% if permalink == "form.html" %}aria-current="page"{% endif %}>Вязание на заказ</a>
+        <a class="site-list__link" href="form.html" {% if permalink == "form.html" %}aria-current="page"{% endif %}>Вязание на заказ</a>
       </li>
     </ul>
     <ul class="main-navigation__list user-list">
