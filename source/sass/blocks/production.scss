@@ -1,32 +1,112 @@
 .production {
-  padding-bottom: 33px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ececec;
+
+  @media (--desktop) {
+    display: grid;
+    grid-template-columns: 1fr 315px;
+    grid-template-rows: auto auto auto;
+    column-gap: 51px;
+  }
 }
 
 .production__title {
-  margin: 22px 26px 26px 91px;
+  margin: 22px 34px 26px;
+  padding-left: 57px;
   color: var(--main-color);
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+
+  @media (--not-mobile) {
+    margin: 0 42px 24px;
+    padding-left: 65px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (--desktop) {
+    grid-column: 2 / 3;
+    margin: 47px 50px 28px 27px;
+    padding: 0;
+    padding-top: 50px;
+  }
+}
+
+.production__wrapper-video {
+  position: relative;
+  margin-bottom: 35px;
+
+  @media (--not-mobile) {
+    order: -1;
+    margin-bottom: 41px;
+  }
+
+  @media (--desktop) {
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+  }
 }
 
 .production__image {
   display: block;
-  margin-bottom: 35px;
   width: 100%;
+  object-fit: cover;
+
+  @media (--not-mobile) {
+    height: 455px;
+  }
+}
+
+.production__button-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
 }
 
 .production__description {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 34px 40px 30px;
   font-size: 13px;
   line-height: 24px;
-  padding-left: 34px;
-  padding-right: 30px;
+
+  @media (--not-mobile) {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 42px 40px;
+  }
+
+  @media (--desktop) {
+    grid-column: 2 / 3;
+    margin: 0 27px 50px;
+  }
+}
+
+.production__button {
+  margin-left: 34px;
+  margin-right: 34px;
+  margin-bottom: 33px;
+
+  @media (--not-mobile) {
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-bottom: 46px;
+  }
+
+  @media (--desktop) {
+    margin: 0 0 60px 27px;
+  }
 }
 
 .production__button--mobile {
-  margin: 0 auto;
-  width: 192px;
+  line-height: 16px;
+  padding: 16px;
+  width: auto;
+
+  @media (--desktop) {
+    width: 230px;
+    grid-column: 2 / 3;
+  }
 }

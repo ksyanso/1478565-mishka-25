@@ -1,17 +1,22 @@
 .button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   color: var(--base-color);
   background-color: transparent;
-  text-align: center;
   text-transform: uppercase;
   border: 2px solid var(--base-color);
   padding: 14px;
-  width: 260px;
+  width: 100%;
   text-decoration: none;
+
+  @media (--not-mobile) {
+    font-size: 17px;
+  }
 }
 
 .button--modal-add {

@@ -16,14 +16,18 @@
             <img class="product-card__image" src="./img/toy-rabbit.jpg" width="260" height="195" alt="Вязаный зайчик в голубом костюме.">
           </a>
           <div class="product-card__content">
-            <a class="product-card__link" href="#">
-              <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
-            </a>
-            <p class="product-card__description">Рост 30 см, вес 200 г</p>
-            <p class="product-card__price">1 200 руб.</p>
-            <a class="product-card__button button-add-cart" href="#">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            <div class="product-card__wrapper-text">
+              <a class="product-card__link" href="#">
+                <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="product-card__description">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="product-card__wrapper-price">
+              <p class="product-card__price">1 200 руб.</p>
+              <a class="product-card__button button-add-cart" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </div>
           </div>
         </li>
         <li class="product-catalog__card product-card">
@@ -60,13 +64,15 @@
     </section>
 
 <!--Процесс производства-->
-    <section class="catalog-page__production production">
+    <section class="page__centerer catalog-page__production production">
       <h2 class="production__title">Процесс производства</h2>
-      <img class="production__image" src="./img/preview-production.jpg" width="260" height="150" alt="Вязаная корзинка мятного-серого цвета.">
-<!--  <video src="" poster="images/preview-production.jpg"></video>-->
-      <button class="production__button-play button-play" type="button">
-        <span class="visually-hidden">Воспроизвести видео</span>
-      </button>
+      <div class="production__wrapper-video">
+        <img class="production__image" src="./img/preview-production.jpg" width="260" height="150" alt="Вязаная корзинка мятного-серого цвета.">
+        <!--  <video src="" poster="images/preview-production.jpg"></video>-->
+        <button class="production__button-play button-play" type="button">
+          <span class="visually-hidden">Воспроизвести видео</span>
+        </button>
+      </div>
       <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
       <button class="production__button button production__button--mobile" type="button">Сделать заказ</button>
     </section>
