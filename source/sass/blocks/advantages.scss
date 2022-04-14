@@ -3,6 +3,11 @@
   line-height: 20px;
   font-weight: 700;
   color: var(--main-color);
+
+  @media (--not-mobile) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .advantages__title {
@@ -13,9 +18,50 @@
 .advantages__list {
   margin: 0;
   padding: 0;
+
+  @media (--not-mobile) {
+    display: grid;
+    grid-template-columns: 300px 338px;
+    grid-template-rows: auto auto auto;
+    column-gap: 30px;
+    grid-template-areas:  "flower yarn"
+                          "money rocket"
+                          "heart gift";
+  }
 }
 
 .advantages__item {
   list-style-type: none;
-  margin-bottom: 83px;
+  margin-bottom: 30px;
+  padding-top: 54px;
+
+  @media (--not-mobile) {
+    &--icon_flower {
+      grid-area: flower;
+    }
+
+    &--icon_money {
+      grid-area: money;
+    }
+
+    &--icon_heart {
+      grid-area: heart;
+    }
+
+    &--icon_yarn {
+      grid-area: yarn;
+    }
+
+    &--icon_rocket {
+      grid-area: rocket;
+    }
+
+    &--icon_gift {
+      grid-area: gift;
+    }
+  }
+  }
+
+.advantages__item:last-child {
+  margin-bottom: 0;
 }
