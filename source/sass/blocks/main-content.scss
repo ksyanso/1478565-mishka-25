@@ -8,16 +8,40 @@
 
 .main-content__popular-product {
   margin-bottom: 73px;
+
+  @media (--not-mobile) {
+    margin-bottom: 125px;
+  }
 }
 
 .main-content__advantages {
   margin-bottom: 58px;
+
+  @media (--not-mobile) {
+    margin-bottom: 82px;
+  }
+
+  @media (--desktop) {
+    padding-left: 175px;
+  }
 }
 
 .main-content__feedback {
   margin-bottom: 89px;
+
+  @media (--not-mobile) {
+    margin-bottom: 153px;
+  }
+
+  @media (--desktop) {
+    margin-bottom: 160px;
+  }
 }
 
 .main-content__contacts {
   margin-bottom: 39px;
+
+  @media (--not-mobile) {
+    margin-bottom: 57px;
+  }
 }
