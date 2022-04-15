@@ -1,0 +1,22 @@
+.link-icon {
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 18px;
+  background-color: var(--base-color);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  &--icon-search {
+    @media (--not-mobile) {
+      padding: 32px;
+    }
+  }
+}
+
+.link-icon__description {
+  @media (--not-mobile) {
+    display: none;
+  }
+}

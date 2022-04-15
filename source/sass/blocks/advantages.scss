@@ -24,9 +24,7 @@
     grid-template-columns: 300px 338px;
     grid-template-rows: auto auto auto;
     column-gap: 30px;
-    grid-template-areas:  "flower yarn"
-                          "money rocket"
-                          "heart gift";
+    grid-template-areas: "flower yarn" "money rocket" "heart gift";
   }
 }
 
@@ -60,7 +58,7 @@
       grid-area: gift;
     }
   }
-  }
+}
 
 .advantages__item:last-child {
   margin-bottom: 0;

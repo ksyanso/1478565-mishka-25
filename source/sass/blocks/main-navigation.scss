@@ -3,8 +3,37 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+
+  @media (--not-mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (--desktop) {
+    justify-content: flex-end;
+  }
+}
+
+.main-navigation__logo {
+  @media (--not-mobile) {
+    order: -1;
+    width: 50%;
+  }
+
+  @media (--desktop) {
+    width: 20%;
+    order: 1;
+    align-self: center;
+  }
 }
 
 .main-navigation__list {
   margin: 0;
+}
+
+.main-navigation__toogle {
+  @media (--not-mobile) {
+    display: none;
+  }
 }
