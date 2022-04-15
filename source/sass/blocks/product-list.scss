@@ -1,5 +1,21 @@
+.product-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (--not-mobile) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 50px;
+  }
+}
+
 .product-list__item {
   list-style-type: none;
+  width: 100%;
+
+  @media (--not-mobile) {
+    width: 50%;
+  }
 }
 
 .product-list__link {
@@ -18,4 +34,14 @@
   &--color_darken {
     background-color: #56c3b2;
   }
+
+  @media (--not-mobile) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.product-list__link-text {
+  display: block;
+  width: 160px;
 }
