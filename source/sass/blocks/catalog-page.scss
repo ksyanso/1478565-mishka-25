@@ -1,6 +1,18 @@
-.catalog-page__title {
-  margin: 0;
+.catalog-page__wrapper-title {
+  background-color: #f1f1f1;
+  padding-top: 74px;
+  padding-bottom: 74px;
   margin-bottom: 30px;
+
+  @media (--not-mobile) {
+    padding-top: 101px;
+    margin-bottom: 67px;
+  }
+
+  @media (--desktop) {
+    padding-bottom: 95px;
+    margin-bottom: 111px;
+  }
 }
 
 .catalog-page__production {
