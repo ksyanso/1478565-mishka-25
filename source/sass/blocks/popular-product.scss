@@ -2,15 +2,15 @@
   @media (--not-mobile) {
     display: grid;
     grid-template-columns: 292px 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: repeat(5, auto);
     column-gap: 42px;
     position: relative;
   }
 
   @media (--desktop) {
-    grid-template-columns: 118px 292px 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    column-gap: 58px;
+    grid-template-columns: 124px 300px 1fr;
+    grid-template-rows: repeat(5, auto);
+    column-gap: 50px;
   }
 }
 

@@ -1,10 +1,22 @@
-.order-page__form {
-  margin-bottom: 55px;
+.order-page__wrapper-title {
+  background-color: #f1f1f1;
+  padding-top: 74px;
+  padding-bottom: 74px;
+  margin-bottom: 17px;
+
+  @media (--not-mobile) {
+    padding-top: 101px;
+    margin-bottom: 54px;
+  }
+
+  @media (--descktop) {
+    padding-bottom: 95px;
+    margin-bottom: 98px;
+  }
 }
 
-.order-page__title {
-  margin: 0;
-  margin-bottom: 17px;
+.order-page__form {
+  margin-bottom: 55px;
 }
 
 .order-page__description {

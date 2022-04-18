@@ -1,5 +1,5 @@
 .link-icon {
-  display: block;
+  display: inline-block;
   position: absolute;
   width: 21px;
   height: 18px;
@@ -9,6 +9,8 @@
   transform: translateY(-50%);
 
   &--icon-search {
+    margin-right: 25px;
+
     @media (--not-mobile) {
       padding: 32px;
     }
