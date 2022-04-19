@@ -1,3 +1,23 @@
+.optional-field__label {
+  @media (--not-mobile) {
+    width: 25%;
+  }
+
+  @media (--desktop) {
+    width: calc(1 / 6 * 100%);
+  }
+}
+
+.optional-field__input {
+  @media (--not-mobile) {
+    width: 75%;
+  }
+
+  @media (--desktop) {
+    width: calc(4 / 6 * 100%);
+  }
+}
+
 .optional-field__input::placeholder {
   color: var(--main-color);
   opacity: 0.3;
