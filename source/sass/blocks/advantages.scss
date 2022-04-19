@@ -26,11 +26,11 @@
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: auto;
-    gap: 58px 30px;
+    gap: 58px 33px;
   }
 
   @media (--desktop) {
-    column-gap: 45px;
+    column-gap: 50px;
   }
 }
 

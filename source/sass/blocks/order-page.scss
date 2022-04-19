@@ -21,5 +21,16 @@
 
 .order-page__description {
   font-size: 13px;
+  margin-top: 0;
   margin-bottom: 30px;
+
+  @media (--not-mobile) {
+    font-size: 17px;
+    width: 100%;
+  }
+
+  @media (--desktop) {
+    width: calc(4 / 6 * 100%);
+    margin-inline: auto;
+  }
 }
