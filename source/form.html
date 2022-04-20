@@ -14,9 +14,9 @@
 
     <form class="order-page__form form" action="https://echo.htmlacademy.ru" method="get">
 <!--Тип-радиокнопки-->
-      <fieldset class="form__type product-type form__color-block">
+      <div class="form__type product-type form__color-block" role="group" aria-labelledby="product-type">
         <div class="form__wrapper page__centerer">
-          <h2 class="product-type__title form-title">Тип</h2>
+          <div class="product-type__title form-title" id="product-type">Тип</div>
           <ul class="product-type__list">
             <li class="product-type__item">
               <input class="product-type__input" type="radio" name="type" id="interior-accessories" value="interior-accessories" checked>
@@ -28,11 +28,11 @@
             </li>
           </ul>
         </div>
-      </fieldset>
+      </div>
 <!--Цвет-чекбокс-->
-      <fieldset class="form__color product-color form__color-block">
+      <div class="form__color product-color form__color-block" role="group" aria-labelledby="product-color">
         <div class="form__wrapper page__centerer">
-            <h2 class="product-color__title form-title">Цвет</h2>
+            <div class="product-color__title form-title" id="product-color">Цвет</div>
             <ul class="product-color__list">
               <li class="product-color__item">
                 <input class="product-color__input" type="checkbox" name="color" value="white" id="white" checked>
@@ -60,11 +60,11 @@
               </li>
             </ul>
         </div>
-      </fieldset>
+      </div>
 <!--ФИО-->
-      <fieldset class="form__initials initials form__color-block">
+      <div class="form__initials initials form__color-block" role="group" aria-labelledby="initials">
         <div class="form__wrapper page__centerer">
-          <h2 class="initials__title form-title">ФИО</h2>
+          <div class="initials__title form-title" id="initials">ФИО</div>
           <ul class="initials__list">
             <li class="initials__item">
               <label class="initials__label form-label" for="name">Имя:</label>
@@ -80,7 +80,7 @@
             </li>
           </ul>
         </div>
-      </fieldset>
+      </div>
 
 
       <div class="form__color-block">
