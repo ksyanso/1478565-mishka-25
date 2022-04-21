@@ -14,7 +14,6 @@ import postScss from "postcss-scss";
 import postCustomMedia from "postcss-custom-media";
 import autoprefixer from "autoprefixer";
 import csso from "postcss-csso";
-import rename from "gulp-rename";
 import terser from "gulp-terser";
 import squoosh from "gulp-libsquoosh";
 import del from "del";
@@ -52,11 +51,6 @@ export function processStyles () {
       autoprefixer(),
       csso()
     ]))
-    .pipe(
-      rename({
-        extname: ".min.css"
-      })
-    )
     .pipe(dest("./build/css", { sourcemaps: data.isDevelopment }))
     .pipe(browser.stream());
 }
@@ -64,11 +58,6 @@ export function processStyles () {
 export function processScripts () {
   return src("./source/js/*.js")
     .pipe(terser())
-    .pipe(
-      rename({
-        extname: ".min.js"
-      })
-    )
     .pipe(dest("./build/js"))
     .pipe(browser.stream());
 }
@@ -88,16 +77,6 @@ export function createWebp (done) {
   if (!data.isDevelopment) {
     return src("./source/img/**/*.{jpg,png}")
       .pipe(squoosh({ webp: {}}))
-      .pipe(dest("./build/img"))
-  } else {
-    done()
-  }
-}
-
-export function createAvif (done) {
-  if (!data.isDevelopment) {
-    return src("./source/img/**/*.{jpg,png}")
-      .pipe(squoosh({ avif: {}}))
       .pipe(dest("./build/img"))
   } else {
     done()
@@ -165,8 +144,7 @@ export function compileProject (done) {
     createSprite,
     copyAssets,
     optimizeImages,
-    createWebp,
-    createAvif
+    createWebp
   )(done);
 }
 
