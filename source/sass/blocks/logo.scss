@@ -1,9 +1,17 @@
 .logo {
-  @media (--desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //@media (--not-mobile) {
+  //  display: block;
+  //}
+
+  //@media (--desktop) {
+  //  display: flex;
+  //  justify-content: center;
+  //  align-items: center;
+  //}
 }
 
 .logo__image {

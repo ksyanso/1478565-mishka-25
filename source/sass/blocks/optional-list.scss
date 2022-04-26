@@ -1,0 +1,20 @@
+.optional-list {
+  display: none;
+  padding: 0;
+
+  @media (--desktop) {
+    display: flex;
+    //width: 100%;
+    font-size: 15px;
+    //position: absolute;
+    //top: 90px;
+  }
+}
+
+.optional-list__item {
+  list-style-type: none;
+
+  @media (--desktop) {
+    //width: 50%;
+  }
+}
