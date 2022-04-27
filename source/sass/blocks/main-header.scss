@@ -8,4 +8,9 @@
 //    //grid-template-columns: auto 1fr;
 //    //padding: 0;
 //  }
+
+  @media (--not-mobile) {
+    display: inline-flex;
+    align-items: start;
+  }
 }

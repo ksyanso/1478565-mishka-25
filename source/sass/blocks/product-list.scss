@@ -4,6 +4,7 @@
 
   @media (--not-mobile) {
     flex-direction: row;
+    align-items: start;
     flex-wrap: wrap;
   }
 }
@@ -16,6 +17,8 @@
   @media (--not-mobile) {
     width: 50%;
   }
+
+
 
   &:nth-child(2n+2) {
     background-color: #56c3b2;
@@ -39,5 +42,12 @@
     font-size: 20px;
     line-height: 30px;
     padding: 25px 37px 34px;
+    transition: all 0.15s ease-in;
+  }
+
+  &:hover {
+    padding-bottom: 39px;
+    padding-top: 25px;
+    transition: all 0.15s ease-out;
   }
 }

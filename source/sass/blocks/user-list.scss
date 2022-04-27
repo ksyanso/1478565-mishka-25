@@ -4,11 +4,13 @@
   list-style-type: none;
 
   @media (--not-mobile) {
+    //justify-self: end;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    //width: 50%;
-    order: 1;
+    width: 75%;
+    order: -1;
+    flex-grow: 1;
 
     //&:after {
     //  content: "";
@@ -40,8 +42,11 @@
   padding-bottom: 28px;
 
   @media (--not-mobile) {
-    padding: 32px;
-    padding-right: 0;
+    padding: 32px 0 32px 82px;
+
+    &--search {
+      padding: 41px 44px;
+    }
   }
 
 

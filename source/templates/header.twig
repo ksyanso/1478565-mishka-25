@@ -1,6 +1,6 @@
 <header class="main-header">
-  <div>
-    <a class="main-navigation__logo logo" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+
+    <a class="main-navigation__logo logo page__centerer" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
       <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка.">
     </a>
     <nav class="main-navigation main-navigation--opened main-navigation--nojs">
@@ -10,12 +10,12 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__site-list site-list">
           <li class="site-list__item">
-            <div class="page__centerer page__centerer--mobile_on">
+            <div class="page__centerer">
               <a class="site-list__link" href="catalog.html" {% if permalink == "catalog.html" %}aria-current="page"{% endif %}>Каталог товаров</a>
             </div>
           </li>
           <li class="site-list__item">
-            <div class="page__centerer page__centerer--mobile_on">
+            <div class="page__centerer">
               <a class="site-list__link" href="form.html" {% if permalink == "form.html" %}aria-current="page"{% endif %}>Вязание на заказ</a>
             </div>
           </li>
@@ -23,7 +23,7 @@
         <ul class="main-navigation__user-list user-list">
           <li class="user-list__item">
             <div class="page__centerer page__centerer--mobile_on">
-              <a class="user-list__link" href="#">
+              <a class="user-list__link user-list__link--search" href="#">
                 <span class="link-icon link-icon--icon_search"></span>
                 <span class="link-icon__description">Поиск по сайту</span>
               </a>
@@ -35,7 +35,6 @@
                 <span class="link-icon link-icon--icon_cart"></span>
                 Корзина: пока пуста</a>
             </div>
-
           </li>
         </ul>
         <ul class="main-navigation__list optional-list">
@@ -49,7 +48,7 @@
         <p class="main-navigation__delivery">Бесплатная доставка по России</p>
       </div>
     </nav>
-  </div>
+
 
 
   </header>
