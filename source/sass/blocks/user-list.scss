@@ -4,26 +4,13 @@
   list-style-type: none;
 
   @media (--not-mobile) {
-    //justify-self: end;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 75%;
     order: -1;
-    flex-grow: 1;
-
-    //&:after {
-    //  content: "";
-    //  display: block;
-    //  position: absolute;
-    //  height: 45px;
-    //  width: 100%;
-    //  background-color: red;
-    //}
   }
 
   @media (--desktop) {
-    //width: 40%;
     order: 2;
   }
 }
@@ -45,9 +32,7 @@
     padding: 32px 0 32px 82px;
 
     &--search {
-      padding: 41px 44px;
+      padding: 44px 41px;
     }
   }
-
-
 }
