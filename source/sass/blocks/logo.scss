@@ -4,6 +4,12 @@
 
   @media (--not-mobile) {
     margin: 0;
-    height: 46px;
+    width: 113px;
+    height: auto;
+  }
+
+  @media (--desktop) {
+    width: 149px;
+    height: auto;
   }
 }

@@ -1,18 +1,26 @@
 .link-icon {
   display: inline-block;
-  position: absolute;
   width: 21px;
   height: 18px;
-  background-color: var(--base-color);
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  margin-right: 25px;
 
-  &--icon-search {
-    margin-right: 25px;
+  &--icon_search {
+    background-image: url("../../icons/sprite.svg#search");
 
     @media (--not-mobile) {
-      padding: 32px;
+      margin-right: 0;
+      width: 18px;
+    }
+  }
+
+  &--icon_cart {
+    background-image: url("../../icons/sprite.svg#cart");
+
+    @media (--not-mobile) {
+      margin-right: 30px;
     }
   }
 }

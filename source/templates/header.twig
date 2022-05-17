@@ -2,7 +2,12 @@
   <div class="main-header__wrapper page__centerer page__centerer--mobile_off">
     <div class="main-header__logo-wrapper">
       <a class="main-header__logo logo " href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-        <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/logo.svg#logo-desktop">
+          <source media="(min-width: 768px)" srcset="./img/logo.svg#logo-tablet">
+          <img class="logo__image" src="./img/logo.svg#logo-mobile" width="86" height="35" alt="Логотип Мишка.">
+        </picture>
+
       </a>
     </div>
 
@@ -34,7 +39,7 @@
           </li>
           <li class="user-list__item">
             <div class="page__centerer page__centerer--mobile_on">
-              <a class="user-list__link" href="#">
+              <a class="user-list__link user-list__link--cart" href="#">
                 <span class="link-icon link-icon--icon_cart"></span>
                 Корзина: пока пуста</a>
             </div>

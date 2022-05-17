@@ -29,7 +29,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     border-top: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
   }
 
   @media (--desktop) {
@@ -47,5 +47,10 @@
     margin: 0;
     margin-top: 22px;
     padding-bottom: 20px;
+  }
+
+  @media (--desktop) {
+    padding: 0;
+    margin-top: 9px;
   }
 }

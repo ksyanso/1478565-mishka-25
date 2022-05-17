@@ -129,17 +129,32 @@
   display: none;
 
   @media (--not-mobile) {
-    display: block;
+    display: flex;
+    position: relative;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     order: 2;
     justify-self: end;
-    align-self: end;
+    padding-top: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100vw;
+      background-color: #f9f9f9;
+      bottom: 0;
+      right: -50px;
+      z-index: -1;
+    }
   }
 
   @media (--desktop) {
     order: 4;
-    align-self: end;
+
+    &::before {
+      right: calc(((100vw - 1050px) / 2) * -1);
+    }
   }
 }
