@@ -2,6 +2,7 @@
   display: block;
   margin: 0 auto;
 
+
   @media (--not-mobile) {
     margin: 0;
     width: 113px;
@@ -11,5 +12,13 @@
   @media (--desktop) {
     width: 149px;
     height: auto;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

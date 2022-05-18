@@ -3,9 +3,34 @@
   flex-direction: column;
 
   @media (--not-mobile) {
+    position: relative;
     flex-direction: row;
     align-items: start;
     flex-wrap: wrap;
+
+    &:after {
+      content: "";
+      background-image: url("../../icons/sprite.svg#wave-fill-tablet");
+      position: absolute;
+      background-repeat: repeat-x;
+      bottom: -10px;
+      width: 100vw;
+      left: -51px;
+      height: 24px;
+    }
+  }
+
+  @media (--desktop) {
+    &:after {
+      content: "";
+      background-image: url("../../icons/sprite.svg#wave-fill-desktop");
+      position: absolute;
+      background-repeat: repeat-x;
+      bottom: -10px;
+      width: 100vw;
+      left: calc(((100vw - 1050px) / 2) * -1);
+      height: 34px;
+    }
   }
 }
 
