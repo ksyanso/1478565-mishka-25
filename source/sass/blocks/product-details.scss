@@ -5,3 +5,15 @@
 .product-details__value {
   margin: 0;
 }
+
+.product-details__item {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 12px;
+  margin-bottom: 7px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

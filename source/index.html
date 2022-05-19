@@ -43,8 +43,9 @@
           <dd class="product-details__value">15 см</dd>
         </div>
       </dl>
-      <img class="popular-product__image" src="./img/product_hit_mobile.png" width="260" height="315"
-            alt="Три вязаные корзинки разных размеров.">
+      <div class="popular-product__wrapper-image">
+        {% include "./templates/picture.twig" with {name: "product-hit", class: "popular-product__image"} %}
+      </div>
       <p class="popular-product__price">Цена: 990 руб.</p>
       <button class="popular-product__button button" type="button">Заказать</button>
     </section>
@@ -54,11 +55,11 @@
       <h2 class="advantages__title title">Коротко о нас:</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--icon_flower">Экологически<br> чистые материалы</li>
-        <li class="advantages__item advantages__item--icon_yarn">Связано вручную<br> с&nbsp;любовью и&nbsp;умилением</li>
-        <li class="advantages__item advantages__item--icon_money">Скандинавский стиль по&nbsp;российской цене</li>
+        <li class="advantages__item advantages__item--icon_clew">Связано вручную<br> с&nbsp;любовью и&nbsp;умилением</li>
+        <li class="advantages__item advantages__item--icon_banknote">Скандинавский стиль по&nbsp;российской цене</li>
         <li class="advantages__item advantages__item--icon_rocket">Поддержка отечественного производителя</li>
         <li class="advantages__item advantages__item--icon_heart">Увеличивает лайки на&nbsp;фотографиях</li>
-        <li class="advantages__item advantages__item--icon_gift">Поставляется<br> в&nbsp;подарочной упаковке</li>
+        <li class="advantages__item advantages__item--icon_present">Поставляется<br> в&nbsp;подарочной упаковке</li>
       </ul>
     </section>
 

@@ -7,10 +7,39 @@
 }
 
 .main-content__popular-product {
-  margin-bottom: 73px;
+  margin-bottom: 31px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/sprite.svg#wave-stroke-mobile");
+    background-repeat: repeat-x;
+    width: 100vw;
+    height: 6px;
+    bottom: 0;
+    left: -30px;
+  }
 
   @media (--not-mobile) {
-    margin-bottom: 125px;
+    margin-bottom: 56px;
+
+    &:after {
+      background-image: url("../../icons/sprite.svg#wave-stroke-tablet");
+      height: 17px;
+      left: -50px;
+    }
+  }
+
+  @media (--desktop) {
+    margin-bottom: 68px;
+
+    &:after {
+      background-image: url("../../icons/sprite.svg#wave-stroke-desktop");
+      height: 23px;
+      width: 100%;
+      left: 0;
+    }
   }
 }
 
