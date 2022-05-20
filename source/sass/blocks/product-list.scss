@@ -1,12 +1,9 @@
 .product-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 
   @media (--not-mobile) {
     position: relative;
-    flex-direction: row;
-    align-items: start;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
 
     &:after {
       content: "";
@@ -38,19 +35,34 @@
   list-style-type: none;
   width: 100%;
   background-color: var(--accent-color);
+  transition: all 0.15s ease-in;
 
-  @media (--not-mobile) {
-    width: 50%;
-  }
+  //@media (--desktop) {
+    &:hover {
+      background-color: #59d5bc;
+      margin-top: -5px;
+      transition: all 0.15s ease-out;
+    }
+
+    &:active {
+      background-color: #59d5bc;
+    }
+  //}
 
   &:nth-child(2n+2) {
     background-color: #56c3b2;
+
+    &:hover,
+    &:active {
+      background-color: #46c1ae;
+    }
   }
 }
 
 .product-list__link {
   display: grid;
   grid-template-columns: 160px 1fr;
+  align-items: center;
   width: 100%;
   min-height: 103px;
   color: #ffffff;
@@ -58,19 +70,51 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-  padding-top: 24px;
-  padding-bottom: 31px;
+  padding-top: 21px;
+  padding-bottom: 18px;
+
+  &:after {
+    content: "";
+    position: relative;
+    background-repeat: no-repeat;
+    justify-self: end;
+    opacity: 0.5;
+  }
+
+  &--interior:after {
+    background-image: url("../../icons/sprite.svg#interior-items");
+    width: 40px;
+    height: 62px;
+    right: 42px;
+  }
+
+  &--toys:after {
+    background-image: url("../../icons/sprite.svg#kids-toys");
+    width: 60px;
+    height: 60px;
+    right: 27px;
+  }
 
   @media (--not-mobile) {
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 37px 34px;
-    transition: all 0.15s ease-in;
+    padding: 25px 37px 27px;
+    min-height: 119px;
+
+
+    &--interior:after,
+    &--toys:after {
+      right: 0;
+    }
   }
 
-  &:hover {
-    padding-bottom: 39px;
-    padding-top: 25px;
-    transition: all 0.15s ease-out;
-  }
+  //@media (--desktop) {
+    &:hover:after {
+      opacity: 0.7;
+    }
+
+    &:active:after {
+      opacity: 0.3;
+    }
+  //}
 }

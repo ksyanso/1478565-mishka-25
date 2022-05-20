@@ -52,18 +52,19 @@
 
   @media (--desktop) {
     padding-left: 175px;
+    margin-bottom: 90px;
   }
 }
 
 .main-content__feedback {
-  margin-bottom: 89px;
+  margin-bottom: 38px;
 
   @media (--not-mobile) {
-    margin-bottom: 153px;
+    margin-bottom: 68px;
   }
 
   @media (--desktop) {
-    margin-bottom: 160px;
+    margin-bottom: 71px;
   }
 }
 
@@ -72,5 +73,9 @@
 
   @media (--not-mobile) {
     margin-bottom: 57px;
+  }
+
+  @media (--desktop) {
+    margin-bottom: 105px;
   }
 }

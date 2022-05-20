@@ -1,14 +1,63 @@
 .feedback {
+  padding-bottom: 51px;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 100vw;
+    height: 6px;
+    background-image: url("../../icons/sprite.svg#wave-stroke-mobile");
+    background-repeat: repeat-x;
+    position: absolute;
+    left: -30px;
+    bottom: 0;
+  }
+
   @media (--not-mobile) {
-    position: relative;
     display: grid;
     grid-template-columns: 1fr 175px;
     grid-template-rows: auto auto;
     row-gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 85px;
+
+    &:after {
+      background-image: url("../../icons/sprite.svg#wave-stroke-tablet");
+      left: -50px;
+      height: 17px;
+    }
+
+    &:before {
+      content: "";
+      width: 350px;
+      height: 457px;
+      position: absolute;
+      top: 0;
+      left: -50px;
+      background-image: url("../../img/feedback@1x.jpg");
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @media(min-resolution: 1.5dppx) {
+        background-image: url("../../img/feedback@2x.jpg");
+      }
+    }
   }
 
   @media (--desktop) {
     padding-left: 175px;
+    padding-bottom: 90px;
+
+    &:after {
+      background-image: url("../../icons/sprite.svg#wave-stroke-desktop");
+      height: 23px;
+      left: 0;
+      width: 100%;
+    }
+
+    &:before {
+      left: 0;
+    }
   }
 }
 
@@ -28,6 +77,11 @@
 
   @media (--not-mobile) {
     grid-column: 1 / -1;
+    margin-bottom: 47px;
+  }
+
+  @media (--desktop) {
+    margin-bottom: 96px;
   }
 }
 
@@ -38,6 +92,11 @@
   @media (--not-mobile) {
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 60px;
+  }
+
+  @media (--desktop) {
+    margin-bottom: 44px;
   }
 }
 
@@ -60,6 +119,16 @@
   color: var(--base-color);
   text-decoration: none;
   margin-top: 6px;
+
+  &:hover {
+    color: #46c1ae;
+    opacity: 0.7;
+  }
+
+  &:active {
+    color: #46c1ae;
+    opacity: 1;
+  }
 }
 
 .feedback__toogles {
@@ -72,6 +141,12 @@
     grid-row: 2 / 3;
     align-self: end;
     justify-self: end;
+    margin-bottom: 62px;
+    margin-right: 20px;
+  }
+
+  @media (--desktop) {
+    margin-bottom: 111px;
   }
 }
 

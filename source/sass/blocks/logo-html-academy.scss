@@ -1,5 +1,16 @@
 .logo-html-academy {
   width: 27px;
   height: 34px;
-  background-color: var(--accent-color);
+  mask: url("../../icons/sprite.svg#htmlacademy") no-repeat center / cover;
+  background: var(--accent-color);
+  background-size: 27px 34px;
+
+  &:hover {
+    background: #46c1ae;
+  }
+
+  &:active {
+    background: #46c1ae;
+    opacity: 0.3;
+  }
 }

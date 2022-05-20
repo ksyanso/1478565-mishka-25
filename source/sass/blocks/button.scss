@@ -17,6 +17,16 @@
   @media (--not-mobile) {
     font-size: 17px;
   }
+
+  &:hover {
+    background: var(--base-color);
+    color: #ffffff;
+  }
+
+  &:active {
+    background: var(--base-color);
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--modal-add {
