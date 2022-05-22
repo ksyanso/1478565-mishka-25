@@ -10,7 +10,7 @@
   margin-bottom: 31px;
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     background-image: url("../../icons/sprite.svg#wave-stroke-mobile");
@@ -24,7 +24,7 @@
   @media (--not-mobile) {
     margin-bottom: 56px;
 
-    &:after {
+    &::after {
       background-image: url("../../icons/sprite.svg#wave-stroke-tablet");
       height: 17px;
       left: -50px;
@@ -34,7 +34,7 @@
   @media (--desktop) {
     margin-bottom: 68px;
 
-    &:after {
+    &::after {
       background-image: url("../../icons/sprite.svg#wave-stroke-desktop");
       height: 23px;
       width: 100%;

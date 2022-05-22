@@ -6,7 +6,7 @@
     font-size: 17px;
     position: relative;
 
-    &:before {
+    &::before {
       content: "";
       width: 47px;
       height: 81px;
@@ -25,11 +25,10 @@
     grid-template-rows: repeat(2, auto);
     column-gap: 50px;
 
-    &:before {
+    &::before {
       top: 62px;
       right: 0;
       grid-column: 1 / 2;
-
     }
   }
 }
@@ -63,8 +62,6 @@
   //flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 62px;
-
-
 
   @media (--not-mobile) {
     grid-template-columns: 1fr 1fr;
@@ -103,7 +100,6 @@
   //flex-wrap: wrap;
   grid-template-columns: auto 1fr;
 }
-
 
 .contacts__property {
   margin-right: 34px;

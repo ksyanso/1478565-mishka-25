@@ -6,8 +6,6 @@
   opacity: 0.2;
   margin-right: 25px;
 
-
-
   &--icon_search {
     --icon: url("../../icons/sprite.svg#search");
     width: 18px;
@@ -24,12 +22,6 @@
 
     @media (--not-mobile) {
       margin-right: 30px;
-    }
-
-    @media (--desktop) {
-      &:hover {
-
-      }
     }
   }
 }

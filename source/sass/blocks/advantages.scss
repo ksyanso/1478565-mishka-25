@@ -49,7 +49,7 @@
     }
   }
 
-  &:before {
+  &::before {
     content: "";
     width: 55px;
     height: 38px;
@@ -57,27 +57,27 @@
     position: relative;
   }
 
-  &--icon_flower:before {
+  &--icon_flower::before {
     background-image: url("../../icons/sprite.svg#advantage-flower");
   }
 
-  &--icon_clew:before {
+  &--icon_clew::before {
     background-image: url("../../icons/sprite.svg#advantage-clew");
   }
 
-  &--icon_banknote:before {
+  &--icon_banknote::before {
     background-image: url("../../icons/sprite.svg#advantage-banknote");
   }
 
-  &--icon_rocket:before {
+  &--icon_rocket::before {
     background-image: url("../../icons/sprite.svg#advantage-rocket");
   }
 
-  &--icon_heart:before {
+  &--icon_heart::before {
     background-image: url("../../icons/sprite.svg#advantage-heart");
   }
 
-  &--icon_present:before {
+  &--icon_present::before {
     background-image: url("../../icons/sprite.svg#advantage-present");
   }
 }

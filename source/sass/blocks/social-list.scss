@@ -21,7 +21,7 @@
     height: 22px;
     background-size: 28px 22px;
     background-position: center;
-    background: #231f20;
+    background-color: #231f20;
     mask: var(--icon) no-repeat center / cover;
 
     &_vk {
@@ -46,7 +46,7 @@
     }
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -60,4 +60,3 @@
     }
   }
 }
-

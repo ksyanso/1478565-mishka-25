@@ -5,7 +5,7 @@
     position: relative;
     grid-template-columns: 1fr 1fr;
 
-    &:after {
+    &::after {
       content: "";
       background-image: url("../../icons/sprite.svg#wave-fill-tablet");
       position: absolute;
@@ -18,7 +18,7 @@
   }
 
   @media (--desktop) {
-    &:after {
+    &::after {
       content: "";
       background-image: url("../../icons/sprite.svg#wave-fill-desktop");
       position: absolute;
@@ -37,17 +37,15 @@
   background-color: var(--accent-color);
   transition: all 0.15s ease-in;
 
-  //@media (--desktop) {
-    &:hover {
-      background-color: #59d5bc;
-      margin-top: -5px;
-      transition: all 0.15s ease-out;
-    }
+  &:hover {
+    background-color: #59d5bc;
+    margin-top: -5px;
+    transition: all 0.15s ease-out;
+  }
 
-    &:active {
-      background-color: #59d5bc;
-    }
-  //}
+  &:active {
+    background-color: #59d5bc;
+  }
 
   &:nth-child(2n+2) {
     background-color: #56c3b2;
@@ -73,7 +71,7 @@
   padding-top: 21px;
   padding-bottom: 18px;
 
-  &:after {
+  &::after {
     content: "";
     position: relative;
     background-repeat: no-repeat;
@@ -81,14 +79,14 @@
     opacity: 0.5;
   }
 
-  &--interior:after {
+  &--interior::after {
     background-image: url("../../icons/sprite.svg#interior-items");
     width: 40px;
     height: 62px;
     right: 42px;
   }
 
-  &--toys:after {
+  &--toys::after {
     background-image: url("../../icons/sprite.svg#kids-toys");
     width: 60px;
     height: 60px;
@@ -102,19 +100,17 @@
     min-height: 119px;
 
 
-    &--interior:after,
-    &--toys:after {
+    &--interior::after,
+    &--toys::after {
       right: 0;
     }
   }
 
-  //@media (--desktop) {
-    &:hover:after {
-      opacity: 0.7;
-    }
+  &:hover::after {
+    opacity: 0.7;
+  }
 
-    &:active:after {
-      opacity: 0.3;
-    }
-  //}
+  &:active::after {
+    opacity: 0.3;
+  }
 }

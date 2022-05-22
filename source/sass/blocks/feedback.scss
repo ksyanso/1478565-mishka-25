@@ -2,7 +2,7 @@
   padding-bottom: 51px;
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     width: 100vw;
     height: 6px;
@@ -21,13 +21,13 @@
     padding-top: 80px;
     padding-bottom: 85px;
 
-    &:after {
+    &::after {
       background-image: url("../../icons/sprite.svg#wave-stroke-tablet");
       left: -50px;
       height: 17px;
     }
 
-    &:before {
+    &::before {
       content: "";
       width: 350px;
       height: 457px;
@@ -38,7 +38,7 @@
       background-repeat: no-repeat;
       z-index: -1;
 
-      @media(min-resolution: 1.5dppx) {
+      @media (min-resolution: 1.5dppx) {
         background-image: url("../../img/feedback@2x.jpg");
       }
     }
@@ -48,14 +48,14 @@
     padding-left: 175px;
     padding-bottom: 90px;
 
-    &:after {
+    &::after {
       background-image: url("../../icons/sprite.svg#wave-stroke-desktop");
       height: 23px;
       left: 0;
       width: 100%;
     }
 
-    &:before {
+    &::before {
       left: 0;
     }
   }
@@ -107,6 +107,7 @@
 
   @media (--not-mobile) {
     display: flex;
+    align-items: start;
     grid-column: 1/2;
     flex-direction: column;
     font-size: 18px;
