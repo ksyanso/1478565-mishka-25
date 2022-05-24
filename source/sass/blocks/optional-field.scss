@@ -1,5 +1,8 @@
 .optional-field__label {
+  margin-bottom: 22px;
+
   @media (--not-mobile) {
+    margin-bottom: 0;
     width: 25%;
   }
 

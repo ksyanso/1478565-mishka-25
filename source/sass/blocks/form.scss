@@ -20,6 +20,18 @@
   }
 }
 
+.form__item-grid {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+
+  @media (--not-mobile) {
+    grid-template-columns: 52px 1fr;
+    column-gap: 30px;
+
+  }
+}
+
 .form__wrapper {
   display: flex;
   flex-direction: column;

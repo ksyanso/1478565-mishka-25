@@ -1,5 +1,8 @@
 .form-email__label {
+  margin-bottom: 4px;
+
   @media (--not-mobile) {
+    margin-bottom: 0;
     width: 25%;
   }
 
@@ -8,7 +11,9 @@
   }
 }
 
-.form-email__input {
+.form-email__input-wrapper {
+  position: relative;
+
   @media (--not-mobile) {
     width: 75%;
   }
@@ -16,4 +21,9 @@
   @media (--desktop) {
     width: calc(4 / 6 * 100%);
   }
+}
+
+.form-email__input {
+  width: 100%;
+  padding-right: 50px;
 }

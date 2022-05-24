@@ -1,5 +1,8 @@
 .phone-form__label {
+  margin-bottom: 4px;
+
   @media (--not-mobile) {
+    margin-bottom: 0;
     width: 25%;
   }
 
@@ -8,12 +11,36 @@
   }
 }
 
-.phone-form__input {
+.phone-form__input-wrapper {
+  //display: flex;
+  //justify-content: space-between;
+  position: relative;
+
   @media (--not-mobile) {
     width: 75%;
+
+    //&::after {
+    //  display: block;
+    //  content: "";
+    //  width: 25px;
+    //  height: 24px;
+    //  background-color: rgba(0, 0, 0, 0.2);
+    //  mask-image: url("../../icons/sprite.svg#phone");
+    //  background-repeat: no-repeat;
+    //  background-size: 25px 24px;
+    //  position: absolute;
+    //  top: 0;
+    //  right: 0;
+    //}
   }
 
   @media (--desktop) {
     width: calc(4 / 6 * 100%);
   }
 }
+
+.phone-form__input {
+  width: 100%;
+  padding-right: 50px;
+}
+

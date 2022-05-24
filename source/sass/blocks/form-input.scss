@@ -1,6 +1,74 @@
-.form-input::placeholder {
-  color: var(--main-color);
-  opacity: 0.3;
+.form-input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid var(--base-color);
+  padding: 16px 0 16px;
+  font-family: inherit;
+  color: var(--base-color);
   font-size: 17px;
   line-height: 18px;
+
+
+  &__icon-phone {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.2);
+    mask-image: url("../../icons/sprite.svg#phone");
+    background-repeat: no-repeat;
+    background-size: 25px 24px;
+    top: 11px;
+    right: 7px;
+  }
+
+  &__icon-email {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 21px;
+    background-color: rgba(0, 0, 0, 0.2);
+    mask-image: url("../../icons/sprite.svg#email");
+    background-size: 32px;
+    background-repeat: no-repeat;
+    //background-position: center;
+    top: 16px;
+    right: 3px;
+  }
+
+  @media (--not-mobile) {
+    padding: 12px 17px 12px;
+    font-size: 19px;
+  }
+
+  &::placeholder {
+    color: var(--main-color);
+    opacity: 0.3;
+    font-size: 17px;
+    line-height: 18px;
+
+    @media (--not-mobile) {
+      font-size: 19px;
+    }
+  }
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:hover + .form-input__icon-phone {
+    background-color: #62d1ba;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: #62d1ba;
+  }
+
+  &:focus-visible + .form-input__icon-phone {
+    background-color: #62d1ba;
+  }
 }
+
+
+
