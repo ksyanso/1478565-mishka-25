@@ -8,56 +8,9 @@
   font-size: 17px;
   line-height: 18px;
 
-
-  &__icon-phone {
-    display: block;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background-color: rgba(0, 0, 0, 0.2);
-    mask-image: url("../../icons/sprite.svg#phone");
-    mask-repeat: no-repeat;
-    mask-size: 25px 24px;
-    top: 11px;
-    right: 7px;
-  }
-
-  &__icon-email {
-    display: block;
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    background-color: rgba(0, 0, 0, 0.2);
-    mask-image: url("../../icons/sprite.svg#email");
-    mask-size: 32px;
-    mask-repeat: no-repeat;
-    mask-position: top;
-    top: 11px;
-    right: 3px;
-  }
-
   @media (--not-mobile) {
     padding: 12px 17px 12px;
     font-size: 19px;
-
-    &__icon-phone {
-      right: 26px;
-    }
-
-    &__icon-email {
-      top: 11px;
-      right: 22px;
-    }
-  }
-
-  @media (--desktop) {
-    &__icon-phone {
-      right: 8px;
-    }
-
-    &__icon-email {
-      right: 4px;
-    }
   }
 
   &::placeholder {
@@ -75,8 +28,8 @@
     border-color: #62d1ba;
   }
 
-  &:hover + .form-input__icon-phone,
-  &:hover + .form-input__icon-email {
+  &:hover + .form-phone__icon-phone,
+  &:hover + .form-email__icon-email {
     background-color: #62d1ba;
   }
 
@@ -85,8 +38,8 @@
     border-color: #62d1ba;
   }
 
-  &:focus-visible + .form-input__icon-phone,
-  &:focus-visible + .form-input__icon-email {
+  &:focus-visible + .form-phone__icon-phone,
+  &:focus-visible + .form-email__icon-email {
     background-color: #62d1ba;
   }
 }

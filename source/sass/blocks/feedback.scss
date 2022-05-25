@@ -109,7 +109,7 @@
 
   @media (--not-mobile) {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     grid-column: 1/2;
     flex-direction: column;
     font-size: 18px;
