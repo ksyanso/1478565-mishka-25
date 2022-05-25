@@ -3,7 +3,7 @@
   border: none;
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
     @media (--not-mobile) {
       padding-top: 18px;
@@ -13,6 +13,7 @@
 
     @media (--desktop) {
       width: calc(1 / 6 * 100%);
+      padding-top: 23px;
     }
   }
 

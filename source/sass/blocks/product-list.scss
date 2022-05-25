@@ -81,6 +81,8 @@
 
   &--interior::after {
     background-image: url("../../icons/sprite.svg#interior-items");
+    background-size: 62px;
+    background-position: center;
     width: 40px;
     height: 62px;
     right: 42px;
@@ -88,6 +90,8 @@
 
   &--toys::after {
     background-image: url("../../icons/sprite.svg#kids-toys");
+    background-position: center;
+    background-size: 60px;
     width: 60px;
     height: 60px;
     right: 27px;

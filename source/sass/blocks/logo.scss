@@ -2,16 +2,15 @@
   display: block;
   margin: 0 auto;
 
-
   @media (--not-mobile) {
     margin: 0;
-    width: 113px;
-    height: auto;
+    width: 11px;
+    height: 46px;
   }
 
   @media (--desktop) {
     width: 149px;
-    height: auto;
+    height: 72px;
 
     &:hover {
       opacity: 0.6;

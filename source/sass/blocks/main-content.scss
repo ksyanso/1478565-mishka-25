@@ -4,6 +4,14 @@
 
 .main-content__main-screen {
   margin-bottom: 30px;
+
+  @media (--not-mobile) {
+    margin-bottom: 53px;
+  }
+
+  @media (--desktop) {
+    margin-bottom: 72px;
+  }
 }
 
 .main-content__popular-product {
@@ -36,6 +44,7 @@
 
     &::after {
       background-image: url("../../icons/sprite.svg#wave-stroke-desktop");
+      background-size: 105px;
       height: 23px;
       width: 100%;
       left: 0;
@@ -52,7 +61,7 @@
 
   @media (--desktop) {
     padding-left: 175px;
-    margin-bottom: 90px;
+    margin-bottom: 85px;
   }
 }
 
@@ -69,10 +78,10 @@
 }
 
 .main-content__contacts {
-  margin-bottom: 39px;
+  margin-bottom: 43px;
 
   @media (--not-mobile) {
-    margin-bottom: 57px;
+    margin-bottom: 52px;
   }
 
   @media (--desktop) {

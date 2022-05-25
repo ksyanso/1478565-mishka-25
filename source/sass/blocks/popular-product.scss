@@ -58,8 +58,8 @@
     max-width: 100px;
     text-align: center;
     grid-column: -1 / -2;
-    top: 15px;
-    right: 0;
+    top: 6px;
+    right: 12px;
     align-self: center;
     margin-bottom: 0;
   }
@@ -68,7 +68,8 @@
     position: absolute;
     grid-column: 1 / 2;
     align-self: end;
-    padding-top: 60px;
+    padding-top: 63px;
+    padding-left: 36px;
   }
 }
 

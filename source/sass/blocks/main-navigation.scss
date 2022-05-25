@@ -141,7 +141,7 @@
     font-weight: 400;
     order: 2;
     justify-self: end;
-    padding-top: 20px;
+    padding-top: 18px;
 
     &::before {
       position: absolute;
@@ -156,6 +156,7 @@
   }
 
   @media (--desktop) {
+    padding-top: 15px;
     order: 4;
 
     &::before {

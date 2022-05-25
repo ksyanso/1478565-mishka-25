@@ -28,4 +28,8 @@
       display: none;
     }
   }
+
+  @media (--desktop) {
+    justify-content: center;
+  }
 }

@@ -16,7 +16,7 @@
       <ul class="product-catalog__list">
         <li class="product-catalog__card product-card">
           <a class="product-card__link" href="#">
-            <img class="product-card__image" src="./img/toy-rabbit.jpg" width="260" height="195" alt="Вязаный зайчик в голубом костюме.">
+            {% include "./templates/picture.twig" with {name: "catalog-rabbit", class: "product-card__image"} %}
           </a>
           <div class="product-card__content">
             <div class="product-card__wrapper-text">
@@ -35,32 +35,40 @@
         </li>
         <li class="product-catalog__card product-card">
           <a class="product-card__link" href="#">
-            <img class="product-card__image" src="./img/laundry-basket.jpg" width="260" height="195" alt="Вязаная бело-коралловая корзинка с тремя наволочками внутри.">
+            {% include "./templates/picture.twig" with {name: "catalog-laundry-basket", class: "product-card__image"} %}
           </a>
           <div class="product-card__content">
-            <a class="product-card__link" href="#">
-              <h3 class="product-card__title">Корзинка для белья</h3>
-            </a>
-            <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
-            <p class="product-card__price">690 руб.</p>
-            <a class="product-card__button button-add-cart" href="#">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            <div class="product-card__wrapper-text">
+              <a class="product-card__link" href="#">
+                <h3 class="product-card__title">Корзинка для белья</h3>
+              </a>
+              <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
+            </div>
+            <div class="product-card__wrapper-price">
+              <p class="product-card__price">690 руб.</p>
+              <a class="product-card__button button-add-cart" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </div>
           </div>
         </li>
         <li class="product-catalog__card product-card">
           <a class="product-card__link" href="#">
-            <img class="product-card__image" src="./img/toy-basket-big.jpg" width="260" height="195" alt="Вязаная бело-салатовая корзинка с мягкими игрушками внутри.">
+            {% include "./templates/picture.twig" with {name: "catalog-toy-basket", class: "product-card__image"} %}
           </a>
           <div class="product-card__content">
-            <a class="product-card__link" href="#">
-              <h3 class="product-card__title">Большая корзинка для игрушек</h3>
-            </a>
-            <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
-            <p class="product-card__price">1 500 руб.</p>
-            <a class="product-card__button button-add-cart" href="#">
-              <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            <div class="product-card__wrapper-text">
+              <a class="product-card__link" href="#">
+                <h3 class="product-card__title">Большая корзинка для&nbsp;игрушек</h3>
+              </a>
+              <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
+            </div>
+            <div class="product-card__wrapper-price">
+              <p class="product-card__price">1 500 руб.</p>
+              <a class="product-card__button button-add-cart" href="#">
+                <span class="visually-hidden">Добавить в корзину</span>
+              </a>
+            </div>
           </div>
         </li>
       </ul>
@@ -68,10 +76,11 @@
 
 <!--Процесс производства-->
     <section class="page__centerer catalog-page__production production">
-      <h2 class="production__title">Процесс производства</h2>
+      <div class="production__title-wrapper">
+        <h2 class="production__title">Процесс производства</h2>
+      </div>
       <div class="production__wrapper-video">
-        <img class="production__image" src="./img/preview-production.jpg" width="260" height="150" alt="Вязаная корзинка мятного-серого цвета.">
-        <!--  <video src="" poster="images/preview-production.jpg"></video>-->
+        {% include "./templates/picture.twig" with {name: "video", class: "production__image"} %}
         <button class="production__button-play button-play" type="button">
           <span class="visually-hidden">Воспроизвести видео</span>
         </button>
