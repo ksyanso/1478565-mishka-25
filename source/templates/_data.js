@@ -58,6 +58,14 @@ export default {
       "maxdppx": 2,
       "alt": "Вязаная корзинка мятного-серого цвета.",
       "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "map": {
+      "ext": "png",
+      "width": 320,
+      "height": 454,
+      "maxdppx": 2,
+      "alt": "Магазин по адресу: улица Большая Конюшенная дом 19/8 офис 101, город Санкт-Петербург.",
+      "viewports": ["desktop", "tablet", "mobile"]
     }
   }
 }

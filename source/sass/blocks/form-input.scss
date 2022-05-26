@@ -28,7 +28,7 @@
     border-color: #62d1ba;
   }
 
-  &:hover + .form-phone__icon-phone,
+  &:hover + .phone-form__icon-phone,
   &:hover + .form-email__icon-email {
     background-color: #62d1ba;
   }
@@ -38,7 +38,7 @@
     border-color: #62d1ba;
   }
 
-  &:focus-visible + .form-phone__icon-phone,
+  &:focus-visible + .phone-form__icon-phone,
   &:focus-visible + .form-email__icon-email {
     background-color: #62d1ba;
   }

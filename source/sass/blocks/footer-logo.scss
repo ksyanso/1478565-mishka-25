@@ -12,5 +12,9 @@
       fill: #46c1ae;
       opacity: 0.3;
     }
+
+    &:focus-visible .footer-logo__image {
+      fill: #46c1ae;
+    }
   }
 }

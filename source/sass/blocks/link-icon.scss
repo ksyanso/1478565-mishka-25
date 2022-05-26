@@ -18,6 +18,7 @@
 
   &--icon_cart {
     width: 21px;
+    height: 21px;
     --icon: url("../../icons/sprite.svg#cart");
 
     @media (--not-mobile) {
